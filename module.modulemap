@@ -1,5 +1,7 @@
 module CLibXML2Linux [system] {
-    header "/usr/include/libxml2/libxml/*"
+    header "/usr/include/libxml2/libxml/HTMLtree.h"
+    header "/usr/include/libxml2/libxml/xpath.h"
+    header "/usr/include/libxml2/libxml/xpathInternals.h"
     link "xml2"
     export *
 }
@@ -8,7 +10,6 @@ module CLibXML2Mac [system] {
     header "/usr/local/include/libxml2/libxml/HTMLtree.h"
     header "/usr/local/include/libxml2/libxml/xpath.h"
     header "/usr/local/include/libxml2/libxml/xpathInternals.h"
-    header "/usr/local/include/libxml2/libxml/xmlversion.h"
     link "xml2"
     export *
 }
