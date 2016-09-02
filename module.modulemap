@@ -1,6 +1,11 @@
-module CWebScraper [system] {
+module CLibXML2Linux [system] {
+    header "/usr/include/libxml2/libxml/HTMLtree.h"
     link "xml2"
-    umbrella header "libxml2-kanna.h"
     export *
-    module * { export * }
+}
+
+module CLibXML2Mac [system] {
+    header "/usr/local/include/libxml2/HTMLtree.h"
+    link "xml2"
+    export *
 }
