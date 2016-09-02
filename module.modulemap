@@ -1,6 +1,11 @@
-module CLibXML2 [system] {
-    umbrella header "libxml2-umbrella.h"
+module CLibXML2Linux [system] {
+    header "/usr/include/libxml2/libxml/*"
     link "xml2"
     export *
-    module * { export * }
+}
+
+module CLibXML2Mac [system] {
+    header "/usr/local/include/libxml2/libxml/*"
+    link "xml2"
+    export *
 }
