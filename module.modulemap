@@ -7,9 +7,9 @@ module CLibXML2Linux [system] {
 }
 
 module CLibXML2Mac [system] {
-    header "/usr/local/include/libxml2/libxml/HTMLtree.h"
-    header "/usr/local/include/libxml2/libxml/xpath.h"
-    header "/usr/local/include/libxml2/libxml/xpathInternals.h"
+    header "libxml/HTMLtree.h"
+    header "libxml/xpath.h"
+    header "libxml/xpathInternals.h"
     link "xml2"
     export *
 }
