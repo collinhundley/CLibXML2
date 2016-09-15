@@ -1,2 +1,2 @@
-# CWebScraper
-C module for WebScraper
+# CLibXML2
+C module for HTMLParser
